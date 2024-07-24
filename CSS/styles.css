@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 100px 0;
+    text-align: center;
+    background: #3498db; /* changed to a blue color */
+}
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: #2ecc71; /* changed to a green color */
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a.active {
+    background: #1abc9c; /* changed to a darker green color */
+}
+
+
+section {
+    padding: 50px 0;
+    border-bottom: 10px solid #ccc; /* changed to a light gray color */
+}
+
+#section1,#section2,#section3,#section4{
+    background-color: #f7dc6f; /* changed to a yellow-orange color */
+}
+
+#section2,#section4{
+    direction: rtl;
+}
+
+#butt {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #9b59b6; /* changed to a purple color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
